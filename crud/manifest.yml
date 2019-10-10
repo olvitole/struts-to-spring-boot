@@ -1,0 +1,12 @@
+---
+applications:
+  - name: app-crud
+    memory: 1G
+    disk_quota: 1G
+    instances: 1
+    path: target/crud-1.0-SNAPSHOT.war
+    env:
+      SPRING_PROFILES_ACTIVE : "dev"
+
+    routes:
+      - route: app-crud.cfapps.io
